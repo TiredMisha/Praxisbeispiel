@@ -1,10 +1,10 @@
 /* --- 1. VARIABLEN (Deine Farbpalette) --- */
 :root {
-    --primary-color: #7C9A92;   /* Salbei-Grün (Beruhigend) */
-    --primary-hover: #5E7A72;   /* Dunkleres Grün für Hover */
-    --bg-color: #F7F5F0;        /* Beige/Creme (Hintergrund) */
-    --text-color: #333333;      /* Dunkelgrau (Guter Kontrast für Text) */
-    --white: #FFFFFF;
+    --primary-color: #ffde59;   /* Salbei-Grün (Beruhigend) */
+    --primary-hover: #5EAD;   /* Dunkleres Grün für Hover */
+    --bg-color: linear-gradient(135deg, #5170ff 0%, #ff66c4 100%);        /* Beige/Creme (Hintergrund) */
+    --text-color: #000000;      /* Dunkelgrau (Guter Kontrast für Text) */
+    --white: #F32;
     --spacing: 20px;
 }
 
@@ -17,9 +17,20 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background: linear-gradient(135deg, #5170ff 0%, #ff66c4 100%);
+    background-attachment: fixed; /* Hintergrund bleibt beim Scrollen fest */
+    color: #363636; /* Weißer Standard-Text für gute Lesbarkeit auf dem Gradienten */
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
     line-height: 1.6;
+}
+
+
+.highlight-yellow {
+    color: #ffde59;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Macht es lesbarer */
 }
 
 /* Container hält den Inhalt mittig */
@@ -31,7 +42,7 @@ body {
 
 /* --- 3. NAVIGATION --- */
 .main-header {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Leichter Schatten */
 }
@@ -45,7 +56,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--bg-color);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,7 +78,7 @@ body {
 .btn-primary {
     display: inline-block;
     background-color: var(--primary-color);
-    color: var(--white);
+    color: var(--text-color);
     padding: 10px 20px;
     border-radius: 25px; /* Runde Ecken */
     text-decoration: none;
@@ -80,15 +91,15 @@ body {
 
 .btn-secondary {
     background: transparent;
-    border: 1px solid var(--text-color);
+    border: 1px solid #ffde59;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn-small {
-    background-color: var(--text-color);
-    color: var(--white);
+    background-color: #ffde59;
+    color: var(--text-color);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
@@ -124,7 +135,7 @@ body {
 
 /* --- 6. FEATURES --- */
 .features {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     padding: 60px 0;
     text-align: center;
 }
@@ -144,8 +155,8 @@ body {
 
 /* --- 7. FOOTER --- */
 footer {
-    background-color: var(--text-color);
-    color: var(--white);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 40px 0;
     margin-top: 50px;
     text-align: center;
@@ -162,7 +173,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: var(--white);
+    background: var(--bg-color);
     padding: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 8px;
