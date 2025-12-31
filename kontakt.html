@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - ChillPill</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header glass-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo"><span class="logo-chill">Chill</span><span class="logo-pill">Pill</span></a>
+        <nav aria-label="Hauptnavigation">
+            <ul class="nav-links">
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="preise.html">Preise & Abo</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="btn-secondary">Login</button>
+    </div>
+</header>
+
+<main>
+    <section class="contact-section container">
+        <h1>Slide into our DMs.</h1>
+        <p>Fragen? Feedback? Bugs? Schreib uns.</p>
+
+        <div class="contact-wrapper">
+            <form id="contact-form" class="glass-panel contact-form">
+                <div class="form-group">
+                    <label for="name">Dein Name</label>
+                    <input type="text" id="name" name="name" placeholder="Wie heißt du?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Deine E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="name@beispiel.de" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Betreff</label>
+                    <select id="subject" name="subject">
+                        <option value="support">Hilfe & Support</option>
+                        <option value="business">Business</option>
+                        <option value="love">Fanpost</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Erzähl uns alles..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Absenden</button>
+            </form>
+
+            <div class="company-info glass-panel">
+                <h3>ChillPill HQ</h3>
+                <p>
+                    ChillPill GmbH<br>
+                    Cloud-Straße 9<br>
+                    1010 Wien<br>
+                    Österreich
+                </p>
+                <p>Email: hello@chillpill.app</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="rechtliches.html#impressum">Impressum</a>
+            <a href="rechtliches.html#datenschutz">Datenschutz</a>
+            <a href="rechtliches.html#lizenz">Lizenz & AGB</a>
+        </div>
+        <p>&copy; 2026 ChillPill GmbH.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
