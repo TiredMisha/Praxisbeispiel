@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preise - ChillPill</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header glass-header">
+    <div class="container header-content">
+        <a href="index.html" class="logo"><span class="logo-chill">Chill</span><span class="logo-pill">Pill</span></a>
+        <nav aria-label="Hauptnavigation">
+            <ul class="nav-links">
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="preise.html" class="active">Preise & Abo</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button class="btn-secondary">Login</button>
+    </div>
+</header>
+
+<main>
+    <section class="pricing-hero container">
+        <h1>Invest in your <span class="highlight-yellow">Vibe.</span></h1>
+        <p>Ein Preis, weniger Stress. Wähle deinen Plan.</p>
+
+        <div class="pricing-toggle glass-panel">
+            <span class="toggle-label">Monatlich</span>
+            <label class="switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Jährlich <span class="discount-badge">-20%</span></span>
+        </div>
+    </section>
+
+    <section class="pricing-grid container">
+
+        <div class="pricing-card glass-panel">
+            <div class="card-header">
+                <h3>The Taste</h3>
+                <p>Nur mal kurz probieren.</p>
+            </div>
+            <div class="price-box">
+                <span class="currency">€</span>
+                <span class="amount">0</span>
+                <span class="period">/ 30 Tage</span>
+            </div>
+            <ul class="feature-list">
+                <li>✅ Zugriff auf alle 500+ Tracks</li>
+                <li>✅ Offline Modus</li>
+                <li>✅ Keine Werbung</li>
+                <li>❌ Endet automatisch</li>
+            </ul>
+            <button class="btn-secondary full-width" onclick="startTrial()">Gratis testen</button>
+        </div>
+
+        <div class="pricing-card glass-panel featured-card">
+            <div class="best-value-badge">Best Value</div>
+            <div class="card-header">
+                <h3>Full Chill</h3>
+                <p>Für echte Zen-Master.</p>
+            </div>
+
+            <div class="price-box">
+                <span class="currency">€</span>
+                <span class="amount" id="price-amount">10.00</span>
+                <span class="period" id="price-period">/ Monat</span>
+            </div>
+
+            <p class="billing-info" id="billing-info">Monatlich kündbar</p>
+
+            <ul class="feature-list">
+                <li>✅ Zugriff auf alle 500+ Tracks</li>
+                <li>✅ Offline Modus</li>
+                <li>✅ Exklusive Sleep-Stories</li>
+                <li>✅ Support Priority</li>
+            </ul>
+            <button class="btn-primary full-width" onclick="buySubscription()">Jetzt starten</button>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-links">
+            <a href="rechtliches.html#impressum">Impressum</a>
+            <a href="rechtliches.html#datenschutz">Datenschutz</a>
+            <a href="rechtliches.html#lizenz">Lizenz & AGB</a>
+        </div>
+        <p>&copy; 2026 ChillPill GmbH.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -373,3 +373,176 @@ input:focus, textarea:focus, select:focus {
         margin-bottom: 20px;
     }
 }
+/* --- PRICING PAGE STYLES --- */
+
+.pricing-hero {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+/* Der Container für den Switch */
+.pricing-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background: rgba(0,0,0,0.2) !important; /* Etwas dunklerer Glass Effekt */
+}
+
+.toggle-label {
+    font-weight: bold;
+    color: var(--white);
+}
+
+.discount-badge {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* --- DER SWITCH (Checkbox Hack) --- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255,255,255,0.3);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Wenn Checkbox aktiviert ist (Checked state) */
+input:checked + .slider {
+    background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* --- PRICING CARDS --- */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+/* Die Featured Card (Das Abo) hervorheben */
+.featured-card {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 30px rgba(255, 222, 89, 0.2);
+}
+
+.best-value-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card-header h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.price-box {
+    margin: 30px 0 10px;
+}
+
+.currency {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+
+.amount {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    color: var(--primary-color);
+}
+
+.period {
+    color: rgba(255,255,255,0.7);
+}
+
+.billing-info {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+    height: 20px; /* Feste Höhe damit Layout nicht springt beim Umschalten */
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Drückt den Button nach unten */
+}
+
+.feature-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.full-width {
+    width: 100%;
+}
