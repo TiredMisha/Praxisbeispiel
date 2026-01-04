@@ -8,17 +8,22 @@
 </head>
 <body>
 
-<header class="main-header glass-header">
-    <div class="container header-content">
-        <a href="index.html" class="logo"><span class="logo-chill">Chill</span><span class="logo-pill">Pill</span></a>
+<header class="main-header">
+
+    <a href="index.html" class="logo">
+        <img src="assets/PillLogoYellow.png" alt="" class="logo-icon">
+        <span class="logo-chill">Chill</span><span class="logo-pill">Pill</span>
+    </a>
+    <div>
         <nav aria-label="Hauptnavigation">
             <ul class="nav-links">
                 <li><a href="about.html">Über uns</a></li>
-                <li><a href="preise.html" class="active">Preise & Abo</a></li>
+                <li><a href="preise.html">Preise & Abo</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
-        <button class="btn-secondary">Login</button>
+
+        <button class="btn-secondary" onclick="alert('Login ist noch nicht verfügbar.')">Login</button>
     </div>
 </header>
 
@@ -32,7 +37,7 @@
             <label class="switch">
                 <input type="checkbox" id="billing-toggle">
                 <span class="slider round"></span>
-            <span class="toggle-label">Jährlich <span class="discount-badge">-20%</span></span>
+                <span class="toggle-label">Jährlich <span class="discount-badge">-20%</span></span>
             </label>
         </div>
     </section>
