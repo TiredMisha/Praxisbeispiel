@@ -11,8 +11,10 @@
 
 <header class="main-header glass-header">
     <div class="container header-content">
-        <img src="assets/PillLogoYellow.png" alt="" class="logo-icon">
-        <a href="index.html" class="logo"><span class="logo-chill">Chill</span><span class="logo-pill">Pill</span></a>
+        <a href="index.html" class="logo">
+            <img src="assets/PillLogoYellow.png" alt="" class="logo-icon">
+            <span class="logo-chill">Chill</span><span class="logo-pill">Pill</span>
+        </a>
         <nav aria-label="Hauptnavigation">
             <ul class="nav-links">
                 <li><a href="about.html" class="active">Über uns</a></li>
@@ -25,54 +27,70 @@
 </header>
 
 <main>
-    <section class="about-hero">
-        <div class="container">
+    <section class="about-hero container">
+        <div class="hero-text-center">
             <h1>Kein Drama. Einfach <span class="highlight-yellow">Chill.</span></h1>
             <p class="intro-text">
                 Das Leben kann stressig sein. Das wissen wir.
-                Aus diesem Grund haben wir uns entschieden einen neuen Weg zu Beruhigung zu kreieren.
-                Gönn dir eine Auszeit vom Drama. Gönn dir ChillPill.</p>
+                Aus diesem Grund haben wir uns entschieden, einen neuen Weg zur Beruhigung zu kreieren.
+                Gönn dir eine Auszeit vom Drama. Gönn dir ChillPill.
+            </p>
         </div>
     </section>
-
+    <br></br>
     <section class="brand-story container">
         <div class="glass-panel">
-            <h2>Die ChillPill Story</h2>
+            <h2>Unsere Marke und wofür wir stehen:</h2>
             <p>Das Leben ist laut. ChillPill ist dein Mute-Button.
-                Wir bieten erstklassige Meditationen für Tag und Nacht, atmosphärische Noisescapes, binaurale Beats,
-                und so viel mehr. Content der dich runterbringt, nicht anspannt.</p>
+                Wir bieten erstklassige Meditationen für Tag und Nacht, atmosphärische Noisescapes, binaurale Beats
+                und so viel mehr. Content, der dich runterbringt, nicht anspannt.</p>
 
             <div class="brand-details">
-                <div class="detail-item">
-                    <h3>Die Pille</h3>
+                <div class="detail-item-top">
+                    <h3>Die Pillen (Bildmarke)</h3>
                     <p>Unser Icon steht für digitale Heilung. Achtsamkeit, Beruhigung und Bewusstsein sind die Mittel,
                         die wir verwenden, um jeden Tag User auf der ganzen Welt zu unterstützen.
-                        Mental Health ist so wichtig wie nie zuvor. Wir wollen eine Welt schaffen, in der Achtsamkeit,
+                        Mental Health ist so wichtig wie nie zuvor. Wir wollen eine Welt schaffen, in der Achtsamkeit
                         wieder zur Tagesroutine wird.</p>
                 </div>
-                <h2>Unsere Markenidentität (Aufgabe 3)</h2>
+
+                <hr class="separator">
+
                 <div class="brand-grid">
                     <div class="brand-item">
                         <h3>1. Wortbildmarke</h3>
-                        <p>Unser Logo kombiniert die spielerische "Chill" Font mit der massiven "Pill" Font. Es
-                            symbolisiert die Balance aus Lockerheit und technologischer Präzision.</p>
+                        <p>Die Schriftarten unseres Logos symbolisieren die Freiheit und Flexibilität eines gechillten
+                            Lifestyles,
+                            gepaart mit der Standfestigkeit und Stabilität, die Routine und Achtsamkeit bringen.</p>
                     </div>
+
                     <div class="brand-item">
                         <h3>2. Hörmarke</h3>
-                        <p>Ein 3-sekündiger Sound-Akkord (C-Dur mit Low-Pass Filter), der die akustische Identität
-                            unserer Streaming-Plattform stärkt.</p>
+                        <p>Sound ist ein zentraler Teil unserer Identität. Unser Jingle verkörpert den Moment, in dem
+                            der Stress abfällt.</p>
+                        <div class="audio-player-container">
+                            <audio id="chillpill-jingle" src="assets/audio/chilllpill.wav" preload="auto"></audio>
+                            <button class="btn-primary" onclick="playJingle()" aria-label="ChillPill Jingle abspielen">
+                                Listen to the Vibe 🎧
+                            </button>
+                        </div>
                     </div>
+
                     <div class="brand-item">
-                        <h3>3. Formmarke</h3>
-                        <p>Die "Pill-Shape" (Radius: 50px) unserer Interface-Elemente ist markenrechtlich geschützt und
-                            sorgt für einen hohen Wiedererkennungswert der UI.</p>
+                        <h3>3. Farbmarke</h3>
+                        <p>Ein blau-pinker Gradient stellt die Balance des Lebens dar. Unser Gelb steht für Energie und
+                            Klarheit.
+                            In einer sich ständig ändernden Welt (Gradient) bleibt unser Fokus (Gelb) konstant.</p>
                     </div>
                 </div>
-                <p><strong>Nizza-Klassen:</strong> 09 (Software), 38 (Streaming-Dienste), 41 (Gesundheits-Coaching).</p>
+            </div>
+
+            <div class="nizza-classes">
+                <p><strong>Nizza-Klassen:</strong> 09 (Software), 38 (Streaming-Dienste), 42 (SaaS).</p>
             </div>
         </div>
     </section>
-
+    <br></br>
     <section class="team container">
         <h2>The Squad</h2>
         <div class="team-grid">
