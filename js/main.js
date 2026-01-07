@@ -1,6 +1,3 @@
-// --- 1. GLOBALE FUNKTIONEN (Hierher verschieben!) ---
-// Diese stehen ganz außen, damit das HTML sie finden kann.
-
 function playJingle() {
     const audio = document.getElementById('chillpill-jingle');
     const logo = document.querySelector('.logo-icon');
@@ -42,7 +39,6 @@ function buySubscription() {
     }
 }
 
-// --- 2. SEITEN-LOGIK (Nur Event-Listener & Checks) ---
 document.addEventListener('DOMContentLoaded', function () {
     console.log("ChillPill App ist gestartet!");
 

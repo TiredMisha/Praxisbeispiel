@@ -85,10 +85,9 @@ body {
     align-items: center;
 }
 
-/* --- LOGO STYLING --- */
+
 .logo {
     text-decoration: none;
-    /* Damit Chill und Pill nebeneinander stehen */
     display: flex;
     align-items: center;
     gap: 5px;
@@ -111,7 +110,6 @@ body {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* --- NAV LINKS --- */
 
 .team-bio {
     font-size: 1rem;
@@ -151,9 +149,6 @@ body {
     color: var(--primary-color);
 }
 
-/* --- 4. BUTTONS --- */
-/* WICHTIG FÜR BARRIEREFREIHEIT: */
-/* Gelber Hintergrund braucht DUNKLEN Text. Weiß auf Gelb ist nicht lesbar. */
 .btn-primary {
     display: inline-block;
     background-color: var(--primary-color);
@@ -201,7 +196,7 @@ body {
     font-weight: bold;
 }
 
-/* --- 5. HERO SECTION --- */
+
 .hero {
     padding: 100px 0;
 }
@@ -224,14 +219,13 @@ body {
 .hero-text p {
     font-size: 1.3rem;
     margin-bottom: 30px;
-    color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-image img {
     max-width: 100%;
-    /* Das Bild schweben lassen */
     animation: float 6s ease-in-out infinite;
-    /* Optional: Bild auch in Glass-Look verpacken oder freistellen */
+
 }
 
 @keyframes float {
@@ -246,10 +240,9 @@ body {
     }
 }
 
-/* --- 6. FEATURES --- */
+
 .features {
     padding: 80px 0;
-    /* Kein Background-Color mehr, wir nutzen den Body-Gradient */
 }
 
 .features h2 {
@@ -281,7 +274,7 @@ body {
 
 .feature-card:hover {
     transform: translateY(-10px);
-    border-color: var(--primary-color); /* Gelber Rand beim Hover */
+    border-color: var(--primary-color);
 }
 
 .feature-card h3 {
@@ -292,10 +285,9 @@ body {
     letter-spacing: 1px;
 }
 
-/* --- 7. FOOTER --- */
+
 footer {
-    /* Glass Footer */
-    background: rgba(0, 0, 0, 0.2); /* Etwas dunklerer Glass Effekt */
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     color: var(--white);
     padding: 40px 0;
@@ -315,14 +307,14 @@ footer {
     color: var(--primary-color);
 }
 
-/* --- 8. COOKIE BANNER --- */
+
 .cookie-banner {
     position: fixed;
     bottom: 20px;
     right: 20px;
 
-    /* Glass Style */
-    background: rgba(255, 255, 255, 0.95); /* Fast undurchsichtig für Lesbarkeit */
+
+    background: rgba(255, 255, 255, 0.95);
     color: var(--text-dark);
 
     padding: 20px;
@@ -333,7 +325,7 @@ footer {
     z-index: 2000;
 }
 
-/* --- 9. FORMULARE (Für kontakt.html) --- */
+
 .contact-wrapper {
     display: flex;
     gap: 40px;
@@ -367,7 +359,7 @@ input, textarea, select {
     padding: 12px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.1); /* Halb-transparentes Feld */
+    background: rgba(255, 255, 255, 0.1);
     color: var(--white);
     font-family: inherit;
 }
@@ -382,7 +374,7 @@ input:focus, textarea:focus, select:focus {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* --- Responsive (Handy) --- */
+
 @media (max-width: 768px) {
     .hero-content, .header-content, .contact-wrapper {
         flex-direction: column;
@@ -390,7 +382,7 @@ input:focus, textarea:focus, select:focus {
     }
 
     .nav-links {
-        display: none; /* Für dieses einfache Beispiel blenden wir Menü mobil aus oder machen es stapelbar */
+        display: none;
     }
 
     .logo {
@@ -398,14 +390,13 @@ input:focus, textarea:focus, select:focus {
     }
 }
 
-/* --- PRICING PAGE STYLES --- */
 
 .pricing-hero {
     text-align: center;
     padding: 60px 0 40px;
 }
 
-/* Der Container für den Switch */
+
 .pricing-toggle {
     display: inline-flex;
     align-items: center;
@@ -430,7 +421,7 @@ input:focus, textarea:focus, select:focus {
     vertical-align: middle;
 }
 
-/* --- DER SWITCH (Checkbox Hack) --- */
+
 .switch {
     position: relative;
     display: inline-block;
@@ -468,25 +459,25 @@ input:focus, textarea:focus, select:focus {
     border-radius: 50%;
 }
 
-/* Das Logo-Bild innerhalb des Link-Containers */
-.logo-icon {
-    height: 60px; /* Hier stellst du die Größe ein. Probiere 40px - 60px. */
-    width: auto; /* Behält das Seitenverhältnis bei, damit nichts verzerrt */
-    display: block; /* Verhindert kleine Abstände unter dem Bild */
 
-    /* Optional: Passt perfekt zum ChillPill Vibe */
+.logo-icon {
+    height: 60px;
+    width: auto;
+    display: block;
+
+
     filter: drop-shadow(0 0 8px rgba(255, 222, 89, 0.3));
-    transform: rotate(-10deg); /* Ein leichter Tilt macht es dynamischer */
+    transform: rotate(-10deg);
 }
 
 .logo {
-    display: flex; /* Richtet Kinder (Bild und Spans) nebeneinander aus */
-    align-items: center; /* Zentriert Bild und Text vertikal perfekt */
-    gap: 12px; /* Abstand zwischen der Pille und dem Wort "Chill" */
-    text-decoration: none; /* Entfernt Unterstreichungen vom Link */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
 }
 
-/* Wenn Checkbox aktiviert ist (Checked state) */
+
 input:checked + .slider {
     background-color: var(--primary-color);
 }
@@ -495,7 +486,7 @@ input:checked + .slider:before {
     transform: translateX(24px);
 }
 
-/* --- PRICING CARDS --- */
+
 .pricing-grid {
     display: flex;
     justify-content: center;
@@ -522,7 +513,7 @@ input:checked + .slider:before {
     border-color: var(--primary-color);
 }
 
-/* Die Featured Card (Das Abo) hervorheben */
+
 .featured-card {
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 30px rgba(255, 222, 89, 0.2);
@@ -574,14 +565,14 @@ input:checked + .slider:before {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 30px;
-    height: 20px; /* Feste Höhe damit Layout nicht springt beim Umschalten */
+    height: 20px;
 }
 
 .feature-list {
     list-style: none;
     text-align: left;
     margin-bottom: 30px;
-    flex-grow: 1; /* Drückt den Button nach unten */
+    flex-grow: 1;
 }
 
 .feature-list li {
